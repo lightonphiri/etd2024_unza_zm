@@ -1,6 +1,6 @@
 # etd2024
 Official Website of  27th International Symposium on Electronic Theses and Dissertations (ETD 2024)
-- October 30 - November 1, 2024 (Livingstone, Zambia)
+- November 4 - November 6, 2024 (Livingstone, Zambia)
 
 ### 1- Install all prerequisites.
 ### 2- Install the jekyll and bundler gems.

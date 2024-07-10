@@ -21,7 +21,7 @@
 title: ETD 2024
 email: etd2024-info@unza.zm
 description: >- # this means to ignore newlines until "baseurl:"
-    27th International Symposium on Electronic Theses and Dissertations - October 30-November 1, 2024 (Livingstone, Zambia)
+    27th International Symposium on Electronic Theses and Dissertations - November 4-November 6, 2024 (Livingstone, Zambia)
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -39,7 +39,7 @@ defaults:
     scope:
       path: ""
     values:
-      conference_name: ETD 2024. October 30-November 1, 2024 (Livingstone, Zambia)
+      conference_name: ETD 2024. November 4-November 6, 2024 (Livingstone, Zambia)
 
 exclude:
   - Gemfile
