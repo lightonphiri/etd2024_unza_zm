@@ -13,6 +13,66 @@ title: "Travel"
 <head>
     <title>ETD 2024 - Travel</title>
     {% include head.html %}
+
+
+	
+    <style>
+		.details {
+				display: none; /* Initially hide details */
+			}
+		
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        .dropdown-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .dropdown-heading {
+            display: flex;
+            align-items: center;
+            /** text-align: center; **/
+            justify-content: space-between;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .dropdown-icon {
+            margin-left: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            background-color: #fafafa;
+            border-top: 1px solid #ccc;
+        }
+
+        .travel-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 90%;
+            margin: 20px auto;
+        }
+        .visit_places{
+            background-color:#eeeeee;
+            padding:8px;
+        }
+    </style>
+	
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
 </head>
 
 <body class="header-fixed">
@@ -31,7 +91,7 @@ title: "Travel"
                 <ul class="pull-right breadcrumb">
                     <li><a href="{{ site.baseurl }}/">Home</a></li>
                     <li><a href="">Attend</a></li>
-                    <li class="active">Travel</li>
+                    <li class="active">Travel </li>
                 </ul>
             </div>
         </div>
@@ -41,15 +101,261 @@ title: "Travel"
             <div class="news-v3 margin-bottom-30">
                 {% include banner.html %}
                 <!-- Contents goes here -->
-                <div class="row" style="margin: 50px">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="error-v1">
-                            <h3><span>Coming soon...</span></h3><br>
-                            <a class="btn-u btn-bordered" href="{{ site.baseurl }}/">Back Home</a>
+                <div class="news-v3-in">
+
+                    <h2 class="margin-bottom-5" style="margin-bottom: 0">
+                        <strong>Travel Details</strong>
+                    </h2>
+
+                    <hr>
+                    <h4 class="margin-bottom-5" style="text-align:center"><strong>Travel from 
+                        Lusaka to Livingstone</strong>
+                    </h4>
+                    
+
+                    <div class="dropdown-container">
+                        <h3 class="dropdown-heading">
+                            <strong> Flight </strong>
+                            <img src="/assets/img/travel/drop_arrow3.png" width="45px"  alt="Dropdown" class="dropdown-icon">
+                        </h3>
+                        <div class="dropdown-content">
+
+                        <p style="text-align: justify;"> From Lusaka, <em>Kenneth Kaunda International Airport,</em> you can fly directly to Livingstone, 
+                            <em>Harry Mwaanga Nkumbula International Airport</em>  (formerly known as <em>Livingstone Airport</em>). 
+                            Flights are available with
+                            <a href="https://proflight-zambia.com/" target="_blank">
+                                Proflight Zambia</a> <em style="color: #555555;">
+                                (daily flights)</em> or 
+                                <a href="https://www.zambia-airways.com/zm/trip/offer/?UserKey=LUN-ADD-Copy-Copy" target="_blank">
+                                    Zambia Airways</a> <em style="color: #555555;">
+                                        (daily flights)</em>. 
+                                    The journey takes around 1 hour and 10 minutes. More information is available at
+                                     <a href="https://www.zambiatourism.com/transport/car-rental/" target="_blank"> 
+                                        Zambia Tourism </a> and 
+                                        <a href="https://www.flightconnections.com/flights-to-livingstone-lvi" target="_blank">
+                                            FlightConnections</a>
+                                </p>
+					
+					    <p>
+					        <div style="text-align: center; margin: 0 auto;">
+						        <p style="text-align: center; margin: 0 auto;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1957067.634852557!2d25.25923971753408!3d-16.65696932698156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e4!4m5!1s0x1940f37d3cbcaa49%3A0xd0d093c1462013eb!2sLusaka!3m2!1d-15.415467699999999!2d28.2773267!4m5!1s0x194ff09b5958356f%3A0x482214a7d637286a!2sLivingstone!3m2!1d-17.851979099999998!2d25.8285153!5e0!3m2!1sen!2szm!4v1721297552665!5m2!1sen!2szm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </p> 
                         </div>
+                    </p>
+                     </div>
                     </div>
+                
+                    <div class="dropdown-container">
+                        <h3 class="dropdown-heading">
+                            <strong> Bus Service </strong>
+                            <img src="/assets/img/travel/drop_arrow3.png" width="45px" class="dropdown-icon">
+                        </h3>
+                        <div class="dropdown-content" style="display: none;">
+                            
+                            <p>Various long-distance buses operate daily between 
+                                Lusaka and Livingstone. Buses leave Lusaka from 6:00 am 
+                                and every half hour thereafter until 11.30 am.
+                                The journey takes around 6 to 7 hours. 			
+                                <ul>
+                                    <li> <strong> Lusaka:</strong> Intercity bus terminus, Dedan Kimathi Rd, Kamwala</li>
+                                    <li> <strong> Livingstone:</strong> Intercity bus terminus, Mosi-oa-Tunya Rd</li>
+                                </ul> 
+                            </p>
+
+                                
+                            <div style="text-align: center; margin: 0 auto;">
+                                <p  style="text-align: center; margin: 0 auto;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1957361.783984887!2d25.735819143126015!3d-16.628162611252556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x1940f37d3cbcaa49%3A0xd0d093c1462013eb!2sLusaka!3m2!1d-15.415467699999999!2d28.2773267!4m5!1s0x194ff09b5958356f%3A0x482214a7d637286a!2sLivingstone!3m2!1d-17.851979099999998!2d25.8285153!5e0!3m2!1sen!2szm!4v1721299236798!5m2!1sen!2szm" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </p> 
+                            </div>
+
+
+                        </div> 
+                    </div> <!-- end of bus service info -->
+                
+                    <div class="dropdown-container">
+                        <h3 class="dropdown-heading">
+                            <strong> Car Rental </strong>
+                            <img src="/assets/img/travel/drop_arrow3.png" width="45px" class="dropdown-icon">
+                        </h3>
+                        <div class="dropdown-content" style="display: none;">
+                            <p>Some of the major international car rental 
+                                companies have offices in Lusaka
+                                at <em>Kenneth Kaunda International Airport</em>. 
+                                It is recommeded to book your vehicle in 
+                                advance as there are limited numbers available. 
+                                More information is available 
+                                at <a href="https://www.zambiatourism.com/transport/car-rental/" target="_blank"> Zambia Tourism</a>
+                            </p>
+                                
+                            <div style="text-align: center; margin: 0 auto;">
+                                <p  style="text-align: center; margin: 0 auto;">
+                                    <img src="/assets/img/travel/offroad.jpg" width="400px" height="300px" alt="offroader"/>
+                                 </p>
+                            </div>
+
+
+                        </div> 
+                    </div> <!-- end of car rental info -->
+
+
+                    <hr>
+                    <h4 class="margin-bottom-5" style="text-align:center;"><strong>Direct
+                         International Flights to Livingstone
+                        </strong>
+                    </h4>
+                    
+                    <div class="travel-container">
+                        
+                        <p>
+                            <em>Harry Mwaanga Nkumbula International Airport</em> in Livingstone 
+                            has direct flights from Johannesburg 
+                            (JNB), Cape Town (CPT) and Nairobi (NBO), <em>(South Africa and Kenya). </em>
+                       <em> Note that the most frequent flights to Livingstone are routes from Lusaka (LUN), domestic, and Johannesburg (JNB), South Africa, with an average of 6 flights per day. More information is available on <a href="https://www.flightconnections.com/flights-to-livingstone-lvi" target="_blank">FlightConnections</a></em>
+                      </p>
+
+                    </div> <!-- end of international flights section -->
+
+
+                    <hr>
+
+                    <h4 class="margin-bottom-5" style="text-align:center;"><strong>
+                        Getting Around Livingstone
+                       </strong>
+                   </h4>
+                   
+                   <div class="travel-container">
+                       
+                       <p>
+                            <em>Taxis:</em> taxis are readily available and can be hired for specific trips, for a half-day or for a full-day.
+                            <br>
+                            <em>Local mini-buses:</em> there is a network of local mini buses that connect various parts of Livingstone.</li>
+                        </p>
+
+                   </div> <!-- end of getting around section -->
+
+                   <hr>  
+                   <h2 class="margin-bottom-5" style="margin-bottom: 0">
+                    <strong>Nearest Places To Visit</strong>
+                        </h2>
+                              
+
+                <div class="travel-container">
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Victoria Falls</h4>
+                            <p style="text-align:justify;">
+                                This iconic waterfall is a must-see. You can view it from various angles, including the Knife Edge Bridge, Livingstone Island and many more locations.
+                                Various exploration options are available including scenic walks, white-water rafting, microlight flights, Zambezi river cruises and more.
+                                Known locally as "Mosi-oa-Tunya" or "The Smoke that Thunders," it is one of the most awe-inspiring natural wonders of the world. Spanning over a mile wide (1.7 kilometers) and plunging 354 feet (108 meters) into the Zambezi Gorge, Victoria Falls is the largest waterfall on Earth.
+                            </p>
+
+                            <div style="text-align: center; margin: 0 auto;">
+                                <p  style="text-align: center; margin: 0 auto;">
+                                    <img src="/assets/img/travel/victoria_falls.jpg" width="400px" height="300px" alt="victoria falls"/>
+                                 </p>
+                            </div>
+                    </div>
+
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Livingstone Museum</h4>
+                        <p>
+                            The oldest and largest musuem in Zambia, Livingstone Museum provides a comprehensive and engaging experience for visitors interested in the rich history and culture of Zambia  
+                        </p>
+                    </div>
+                    
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Mosi-oa-Tunya National Park</h4>
+                        <p>
+                            This park offers wildlife viewing opportunities, including elephants, white rhinos, zebras, and various other wildlife.
+                            Embark on thrilling game-viewing safaris and enjoy serene Zambezi river cruises, offering memorable adventures and breathtaking views.
+                            
+                        </p>
+                    </div>
+
+
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Livingstone Crocodile Park</h4>
+                        <p>
+                            A short drive from the stunning Victoria Falls, this park offers the opportunity to get close to massive Nile crocodiles, some of which are over 100 years old! Get up close with crocodiles, snakes, and other reptiles native to the area.
+                            The journey from Victoria Falls to Livingstone Crocodile Park by road is around 20 minutes.
+                        </p>
+                    </div>
+
+
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Railway Museum</h4>
+                        <p>
+                            Learn about the history of Zambia's railways and see vintage locomotives and carriages.
+                            The journey from Victoria Falls to Livingstone's Railway Musuem by road is around 20 minutes.
+                        </p>
+                    </div>
+
+
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Adventure Activities</h4>
+                        <p>
+                            Livingstone is a hub for adrenaline-pumping activities like bungee jumping, white-water rafting, zip-lining and river cruises.
+                        </p>
+                    </div>
+                
+                   
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Local Markets</h4>
+                        <p>
+                            Visit the local markets to experience traditional crafts, art, and local cuisine. Livingstone includes Maramba Market, Mukuni Park Curio Market, Dambwa Central Market and Livingstone Farmers Market.
+                        </p>
+                    </div>
+
+                    
+                    <div style="margin-bottom:40px;">
+                        <h4 class="visit_places">Chobe National Park (Botswana)</h4>
+                        <p>
+                            While not in Livingstone itself, it's nearby and offers excellent wildlife safaris, especially known for its large elephant herds.
+                            <em> When crossing the border into Botswana to visit Chobe National Park, it is essential to have the appropriate visa and carry
+                                your passport with you at all times. Please check the visa requirements for your 
+                                nationality in advance. </em>
+                                The journey from Victoria Falls to Chobe National Park by road takes around 1 hour and 15 minutes</p>
+                    
+                        </div>
+
+
                 </div>
-            </div>
+                
+                </div>
+                <!-- end main content div -->
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const headings = document.querySelectorAll('.dropdown-heading');
+                        const contents = document.querySelectorAll('.dropdown-content');
+                        const icons = document.querySelectorAll('.dropdown-icon');
+            
+                        
+                        // Show first content by default
+                        contents[0].style.display = 'block';
+
+                        // Function to toggle content visibility
+                        function toggleContent(content) {
+                            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                        }
+            
+                        // Add event listeners to each heading
+                        headings.forEach((heading, index) => {
+                            heading.addEventListener('click', function() {
+                                toggleContent(contents[index]);
+                            });
+            
+                            icons[index].addEventListener('click', function(event) {
+                                toggleContent(contents[index]);
+                                event.stopPropagation(); // Prevent heading click event propagation
+                            });
+                        });
+                    });
+                </script>
+
+           </div>
+
         </div>
         <!--/end container-->
     </div>
