@@ -15,6 +15,24 @@ title: "Workshops"
     <title>ETD 2024</title>
     {% include head.html %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/header-v3.css">
+    <style>
+        .list{
+            font-size:medium; 
+            font-weight: bold;
+        }
+        .card-body .list-group-item {
+            border: 0;
+        }
+        .workshop {
+            margin-bottom: 20px;
+        }
+        .workshop-content {
+            padding-left: 20px;
+        }
+        .list-group-item-action li {
+            text-indent: -20px;
+        }
+    </style>
 </head>
 
 <body class="header-fixed">
@@ -44,13 +62,65 @@ title: "Workshops"
                 {% include banner.html %}
                 <!-- Contents goes here -->
                 <div class="row" style="margin: 50px">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="error-v1">
-                            <h3><span>Coming soon...</span></h3><br>
-                            <a class="btn-u btn-bordered" href="{{ site.baseurl }}/">Back Home</a>
+                    <!-- <div class="mb-10" style="margin-bottom: 30px;">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">The following papers are accepted at the ETD 2024 Conference</h3>
+                    </div> -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="list-group-item">
+                                <div class="list-group-item-action workshop">
+                                    <h3>Workshop 1</h3>
+                                    <div class="workshop-content">
+                                        <li class="list">Leveraging ORCID's Global Participation Program and Regional Consortium Approach to Enhance Global ETD Discoverability and Reuse</li>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Author:</strong> Lombe Tembo</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Organisation:</strong> ORCID</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Abstract:</strong> This workshop proposal aims to explore strategies for leveraging ORCID and Persistent Identifiers (PIDs) to enhance the discoverability and reusability of Electronic Theses and Dissertations (ETDs) on a global scale. ETDs represent a vital component of scholarly communication, providing valuable insights and contributions to research.</p>
+                                    </div>
+                                </div>
+                
+                                <div class="list-group-item-action workshop">
+                                    <h3>Workshop 2</h3>
+                                    <div class="workshop-content">
+                                        <li class="list">Globalizing Knowledge: Leveraging Large Language Models to Enhance Accessibility of ETDs</li>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Author:</strong> Yinlin Chen</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Organisation:</strong> Virginia Tech</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Abstract:</strong> Electronic Theses and Dissertations (ETDs) encapsulate significant research findings and innovative ideas but often have limited visibility and accessibility, particularly in regions and disciplines with restricted digital reach. This workshop introduces an LLM-based application using a Retrieval-Augmented Generation (RAG) architectural approach to address these challenges.</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Facilitators:</strong> Yinlin Chen (Virginia Tech), William A Ingram (Virginia Polytechnic Institute and State University), Edward A Fox (Virginia Tech)</p>
+                                    </div>
+                                </div>
+                
+                                <div class="list-group-item-action workshop">
+                                    <h3>Workshop 3</h3>
+                                    <div class="workshop-content">
+                                        <li class="list">DataCite Connect: Global visibility for your ETDs and beyond with PIDs</li>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Author:</strong> Gabriela Mejias</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Organisation:</strong> DataCite</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Abstract:</strong> PIDs and their associated metadata can be considered the building blocks of research infrastructure (Meadows et al., 2019). In addition, PIDs play a central role in the Open Science framework as they can increase transparency and recognition in research, and facilitate integration and interoperability, as well as making research FAIR (Wilkinson et al. 2016). This half-day workshop will cover these topics in detail.</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Facilitators:</strong> Lighton Phiri</p>
+                                    </div>
+                                </div>
+                
+                                <div class="list-group-item-action workshop">
+                                    <h3>Workshop 4</h3>
+                                    <div class="workshop-content">
+                                        <li class="list">ETDs 101: No Experience Required!</li>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Author:</strong> Charles J Greenberg</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Organisation:</strong> NDLTD</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Abstract:</strong> Many universities do not yet participate in the global network of digitized student theses or dissertations. The Networked Digital Library of Theses and Dissertations (NDLTD) wants to help universities to get started by sharing experiences of those that started ETD programs from nothing. Among the topics to be covered are: 1. Lifecycle Management of ETDs, 2. Institutional Partnerships, 3. Technology—Institutional Integration.</p>
+                                        <p class="text-muted mb-0" style="margin-bottom: 5px;"><strong>Facilitators:</strong> Charles J Greenberg (NDLTD)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                      
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="error-v1">
+                                <a class="btn-u btn-bordered" href="{{ site.baseurl }}/">Back Home</a>
+                            </div>
+                        </div>                    
+                </div>  
             </div>
         </div>
         <!--/end container-->
