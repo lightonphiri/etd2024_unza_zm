@@ -31,12 +31,35 @@ title: "27th International Symposium on Electronic Theses and Dissertations - No
 
         <!-- Image Gradient -->
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             //Get Banner image by random
             var n = Math.floor(Math.random() * 6 + 1);
             document.write('<div class="interactive-slider-v2" style="background-image:url(\'assets/img/main-banners/ETD2024_banner_' + n + '.jpg\')">');
+        </script> -->
+
+        <script type="text/javascript">
+            var n = Math.floor(Math.random() * 6 + 1);
+            document.write('<div class="interactive-slider-v2" style="background-image:url(\'assets/img/main-banners/ETD2024_banner_' + n + '.jpg\')">');
+            document.write('<div class="container">');
+            document.write('<h1 class="animated fadeInUp">ETD 2024</h1>');
+            document.write('<h1 class="animated fadeInUp">Hybrid Conference</h1>');
+            document.write('<p class="animated fadeInRight" id="sub_title">27<sup>th</sup> International Symposium on Electronic Theses and Dissertations (ETD 2024)</p>');
+            document.write('<p class="animated fadeInLeft">November 4 - November 6, 2024 (Livingstone, Zambia)</p>');
+            document.write('</div></div>');
+        
+            var currentBanner = n;
+            var totalBanners = 6;
+        
+            function changeBanner() {
+                currentBanner = (currentBanner % totalBanners) + 1;
+                document.querySelector('.interactive-slider-v2').style.backgroundImage = 'url(\'assets/img/main-banners/ETD2024_banner_' + currentBanner + '.jpg\')';
+            }
+        
+            // Auto-rotate banners every 5 seconds (5000 milliseconds)
+            setInterval(changeBanner, 6000);
         </script>
-        <div class="container">
+
+        <!-- <div class="container">
 
             <h1 class="animated fadeInUp">ETD 2024</h1>
             
@@ -44,7 +67,7 @@ title: "27th International Symposium on Electronic Theses and Dissertations - No
             <p class="animated fadeInRight" id="sub_title">27<sup>th</sup> International Symposium on Electronic Theses and Dissertations (ETD 2024)
             </p>
             <p class="animated fadeInLeft">November 4 - November 6, 2024 (Livingstone, Zambia)</p>
-        </div>
+        </div> -->
     </div>
     <!-- End Image Gradient -->
 
